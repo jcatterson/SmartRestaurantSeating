@@ -1,0 +1,15 @@
+Get all the possibilities for each table with potential to fit.
+Get the estimated accomodation time for the table group
+Order by the estimated accomodation time
+-- compare to best fit, if the customer can get a better fit with a [similar] time
+-- order the best fit before the best time
+customer reserves the first ordered table
+   if another customer has already reserved the table and the customer is a [big group]
+      request customer to try to reserve a different table
+             a request for a customer to reserve a different table
+             will be requested if the customer can find another table to reserve
+                      with a [similar] wait time, repeat if the table is already reserved 
+repeat for the entire wait list
+
+Seat the customer, once they have reserved the table and the
+table requested has been cleaned
